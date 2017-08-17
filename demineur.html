@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Démineur - By le chinois</title>
+		<meta charset="utf8" />
+	</head>
+
+	<body>
+		<div>
+			<table>
+				<tr>
+					<td>Hauteur (11 max)</td>
+					<td>
+						<input 	type="number" 
+								value="8" 
+								placeholder="Largeur"
+								id="x"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Largeur (11 max)</td>
+					<td>
+						<input 	type="number" 
+								value="8" 
+								placeholder="Hauteur"
+								id="y"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Nombre de mines</td>
+					<td>
+						<input 	type="number" 
+								value="8" 
+								placeholder="Nombre de mines"
+								id="nb_mine"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td>
+						<input 	type="button" 
+								value="Lancer la partie" 
+								onClick="changerTerrain()"/>
+					</td>
+				</tr>
+			</table>
+		</diV>
+		
+		<div>
+			<h1>Règles du jeu</h1>
+			<ul>
+				<li>Ne clique pas sur les bombes qui sont symbolisées par &loz;</li>
+				<li>Clic gauche pour tenter la case</li>
+				<li>Clic droit pour poser/enlever un drapeau</li>
+			</ul>
+		</div>
+		
+		<div id="plateau">
+		</div>
+		
+		<script src="demineur.js">
+		</script>
+	</body>
+</html>
